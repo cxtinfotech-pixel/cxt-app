@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+    <h2>Equipment Inspection</h2>
+</div>
+
+<div class="card">
+
+<select id="equipment">
+<option>Backhoe</option>
+<option>Bulldozer</option>
+</select>
+
+<select id="wheel">
+<option>Wheel Type A</option>
+<option>Wheel Type B</option>
+</select>
+
+<input id="site" placeholder="Work Site">
+
+<button class="primary" onclick="getLocation()">Get GPS</button>
+<p id="gps"></p>
+
+<h3>Required Photos</h3>
+<div id="photos"></div>
+
+<video id="video" autoplay></video>
+
+<button class="primary" onclick="openCamera()">Open Camera</button>
+
+<button class="success" onclick="timeIn()">TIME IN</button>
+<button class="danger" onclick="timeOut()">TIME OUT</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
